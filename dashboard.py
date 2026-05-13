@@ -16,7 +16,7 @@ try:
 
     st.sidebar.header("Filter Dashboard")
     age_range = st.sidebar.slider("Rentang Usia:", int(df['age'].min()), int(df['age'].max()), (int(df['age'].min()), int(df['age'].max())))
-    selected_gender = st.sidebar.multiselect("Gender:", [1, 2], [1, 2], format_func=lambda x: "Wanita" if x==1 else "Pria")
+    selected_gender = st.sidebar.multiselect("Gender:", [1, 2], [1, 2], format_func=lambda x: "Perempuan" if x==1 else "Laki-Laki")
 
     filtered_df = df[(df['age'] >= age_range[0]) & (df['age'] <= age_range[1]) & (df['gender'].isin(selected_gender))].copy()
 
