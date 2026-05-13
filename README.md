@@ -14,7 +14,7 @@ Dashboard interaktif ini dibangun menggunakan **Streamlit** untuk memvisualisasi
 
 ## 📁 Struktur Folder
 ```text
-dashboard_cardio/
+CapstoneProject/
 ├── dashboard.py          # File utama aplikasi Streamlit
 ├── cardio_clean.csv      # Dataset utama yang sudah dibersihkan
 ├── requirements.txt      # Daftar library Python yang dibutuhkan
